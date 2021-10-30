@@ -5124,9 +5124,9 @@ var $elm$browser$Browser$sandbox = function (impl) {
 var $author$project$Main$update = F2(
 	function (msg, model) {
 		if (msg.$ === 'Increment') {
-			return model + 1;
+			return (model < 6) ? (model + 1) : model;
 		} else {
-			return model - 1;
+			return (model > 0) ? (model - 1) : model;
 		}
 	});
 var $author$project$Main$Decrement = {$: 'Decrement'};
